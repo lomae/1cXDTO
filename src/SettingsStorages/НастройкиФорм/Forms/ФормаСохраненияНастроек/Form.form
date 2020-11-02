@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:Button">
     <name>Сохранить</name>
     <id>7</id>
@@ -28,7 +28,11 @@
     <representation>Auto</representation>
     <autoMaxWidth>true</autoMaxWidth>
     <autoMaxHeight>true</autoMaxHeight>
+    <horizontalStretch>true</horizontalStretch>
     <placementArea>UserCmds</placementArea>
+    <backColor xsi:type="core:ColorRef">
+      <color>Web.HoneyDew</color>
+    </backColor>
     <representationInContextMenu>Auto</representationInContextMenu>
   </items>
   <items xsi:type="form:FormField">
