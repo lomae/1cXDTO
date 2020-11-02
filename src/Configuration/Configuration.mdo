@@ -33,6 +33,7 @@
   </languages>
   <subsystems>Subsystem.Основная</subsystems>
   <subsystems>Subsystem.Телеграм</subsystems>
+  <subsystems>Subsystem.ХранилищеНастроек</subsystems>
   <commonPictures>CommonPicture.ТипОбращения</commonPictures>
   <sessionParameters>SessionParameter.КодСотрудника</sessionParameters>
   <filterCriteria>FilterCriterion.Анкета</filterCriteria>
