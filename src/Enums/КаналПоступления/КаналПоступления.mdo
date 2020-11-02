@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="846fb044-517e-4f90-bb9a-bb60a3c2f593">
+  <producedTypes>
+    <refType typeId="36a234d1-9ad2-4173-a185-bde12b5a44cc" valueTypeId="0ae20e79-4c91-4b87-88ab-a6a8c47246b2"/>
+    <listType typeId="8a3572a1-d997-4c06-b28d-87f5eeb5da19" valueTypeId="27f566eb-f270-4ea4-979f-9168388b18be"/>
+    <managerType typeId="011072f2-6fb4-4da9-9c50-0ebe2a95af22" valueTypeId="16cbdcf4-b39a-4d1a-9b7d-77f160050c65"/>
+  </producedTypes>
+  <name>КаналПоступления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Канал поступления</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="eb8d29a5-3650-4635-921a-4bcf171cef76">
+    <name>Лично</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лично</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d2a4436f-7497-4eca-aeca-5f1b56c67aa5">
+    <name>Почтой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Почтой</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e6bbe51f-b206-49b8-a3b5-d71f5c68e520">
+    <name>ЧерезБанкПартнер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Через банк партнер</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="718f3b9c-d258-4928-baf2-a2f739b0d909">
+    <name>Интернет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интернет</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c02a1a40-0584-4d9b-a15b-d82708fc46d3">
+    <name>Телефон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефон</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

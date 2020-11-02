@@ -1,0 +1,58 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://пф.рф/НВП/2017-08-21" elementFormQualified="true" attributeFormQualified="false">
+	<import namespace="http://пф.рф/УТ/2017-08-21"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ВыплатноеДело" type="d2p1:ТипНепустаяСтрока"/>
+	<valueType name="ТипВариантРешения" base="xs:normalizedString" variety="Atomic">
+		<enumeration>ОТКЗ</enumeration>
+		<enumeration>УСТН</enumeration>
+		<enumeration>КОРР</enumeration>
+		<enumeration>ДОПЛ</enumeration>
+		<enumeration>ПРОС</enumeration>
+		<enumeration>ВОЗБ</enumeration>
+		<enumeration>ПРЕК</enumeration>
+		<enumeration>ВОСТ</enumeration>
+		<enumeration>ПРОД</enumeration>
+	</valueType>
+	<valueType name="ТипВидВыплаты" base="xs:normalizedString" variety="Atomic">
+		<enumeration>ЕВ</enumeration>
+		<enumeration>ЕВО</enumeration>
+		<enumeration>ЕВДМ</enumeration>
+		<enumeration>НП</enumeration>
+		<enumeration>НОПС</enumeration>
+		<enumeration>СПВ</enumeration>
+		<enumeration>ВП</enumeration>
+	</valueType>
+	<valueType name="ТипВидПенсионногоДействия" base="xs:normalizedString" variety="Atomic">
+		<enumeration>ПЕНС</enumeration>
+		<enumeration>ПРСЧ</enumeration>
+		<enumeration>ОТКЗ</enumeration>
+		<enumeration>ОТКН</enumeration>
+		<enumeration>ВОСТ</enumeration>
+		<enumeration>ДПВЛ</enumeration>
+		<enumeration>КРСЧ</enumeration>
+		<enumeration>КР09</enumeration>
+		<enumeration>КРПК</enumeration>
+		<enumeration>СТОП</enumeration>
+		<enumeration>ПРБЗ</enumeration>
+	</valueType>
+	<valueType name="ТипВидПовышенияФВ" base="xs:integer" variety="Atomic" minInclusive="1" maxInclusive="2"/>
+	<valueType name="ТипТипЗапроса" base="xs:normalizedString" variety="Atomic">
+		<enumeration>ПЕНС</enumeration>
+		<enumeration>ПРСЧ</enumeration>
+		<enumeration>ПЕНК</enumeration>
+		<enumeration>КРСЧ</enumeration>
+		<enumeration>КОНВ</enumeration>
+		<enumeration>РАСЧ</enumeration>
+		<enumeration>СОЦД</enumeration>
+		<enumeration>СДПР</enumeration>
+		<enumeration>ПРБЧ</enumeration>
+		<enumeration>НПЕН</enumeration>
+		<enumeration>НКОР</enumeration>
+		<enumeration>НДОП</enumeration>
+		<enumeration>НВТР</enumeration>
+		<enumeration>НПРД</enumeration>
+		<enumeration>НИНФ</enumeration>
+		<enumeration>ИДСВ</enumeration>
+		<enumeration>НПРВ</enumeration>
+		<enumeration>ИДОК</enumeration>
+	</valueType>
+</package>

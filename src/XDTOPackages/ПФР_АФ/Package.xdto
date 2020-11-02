@@ -1,0 +1,40 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://пф.рф/АФ/2017-08-21" elementFormQualified="true" attributeFormQualified="false">
+	<import namespace="http://пф.рф/УТ/2017-08-21"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="GUID" type="d2p1:ТипGUID"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ВОтветНа" type="d2p1:ТипGUID"/>
+	<property name="ДатаВремя" type="xs:dateTime"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ПрограммаПодготовки" type="d2p1:ТипНепустаяСтрока"/>
+	<valueType name="XLSФайл" base="xs:string" variety="Atomic">
+		<pattern>.*\.[xX][lL][sS]</pattern>
+		<pattern>.*\.[xX][lL][sS][xX]</pattern>
+	</valueType>
+	<valueType name="XMLФайл" base="xs:string" variety="Atomic">
+		<pattern>.*\.[xX][mM][lL]</pattern>
+	</valueType>
+	<valueType name="XSDСхема" base="xs:string" variety="Atomic">
+		<pattern>.*\.[xX][sS][dD]</pattern>
+	</valueType>
+	<valueType name="XSLФайл" base="xs:string" variety="Atomic">
+		<pattern>.*\.[xX][sS][lL]</pattern>
+		<pattern>.*\.[xX][sS][lL][tT]</pattern>
+		<pattern>.*\.[fF][oO]</pattern>
+	</valueType>
+	<valueType name="ТипКодРезультата" base="xs:string" variety="Atomic" maxLength="2">
+		<pattern>\d{2}</pattern>
+	</valueType>
+	<valueType name="ТипНомерВерсии" base="xs:string" variety="Atomic" maxLength="20">
+		<pattern>\d*(\.\d{1,3})*</pattern>
+	</valueType>
+	<objectType name="ТипОписаниеПеременной">
+		<property name="Описание" type="xs:string"/>
+		<property name="Декларация" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипСлужебнаяИнформация">
+		<property xmlns:d3p1="http://пф.рф/АФ/2017-08-21" ref="d3p1:GUID"/>
+		<property xmlns:d3p1="http://пф.рф/АФ/2017-08-21" ref="d3p1:ВОтветНа" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/АФ/2017-08-21" ref="d3p1:ДатаВремя"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://пф.рф/АФ/2017-08-21" name="ТипСлужебнаяИнформацияППЭД" base="d2p1:ТипСлужебнаяИнформация">
+		<property ref="d2p1:ПрограммаПодготовки"/>
+	</objectType>
+</package>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2daab6e1-5a8c-42ac-8ed5-f891ba3bdc56">
+  <name>ПФР_НВП</name>
+  <synonym>
+    <key>ru</key>
+    <value>ПФР НВП</value>
+  </synonym>
+  <namespace>http://пф.рф/НВП/2017-08-21</namespace>
+</mdclass:XDTOPackage>

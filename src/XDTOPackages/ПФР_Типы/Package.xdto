@@ -1,0 +1,70 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" elementFormQualified="true" attributeFormQualified="false">
+	<import namespace="http://пф.рф/УТ/2017-08-21"/>
+	<import namespace="http://пф.рф/АФ/2017-08-21"/>
+	<valueType name="ТипВариантРешения" base="xs:normalizedString" variety="Atomic">
+		<enumeration>ОТКЗ</enumeration>
+		<enumeration>УСТН</enumeration>
+		<enumeration>КОРР</enumeration>
+		<enumeration>ДОПЛ</enumeration>
+		<enumeration>ПРОС</enumeration>
+		<enumeration>ВОЗБ</enumeration>
+		<enumeration>ПРЕК</enumeration>
+	</valueType>
+	<objectType name="ТипЗастрахованноеЛицо">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:ФИО"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:СНИЛС"/>
+	</objectType>
+	<objectType name="ТипИсполнитель">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:ФИО"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Телефон"/>
+	</objectType>
+	<objectType name="ТипРасхождение">
+		<property name="Код" type="xs:normalizedString" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ТекстСообщения" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипРуководитель">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:ФИО"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Должность" type="d3p1:ТипНепустаяСтрока"/>
+	</objectType>
+	<objectType name="ТипСведенияНПФ">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Наименование" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="НаименованиеФормализованное" type="d3p1:ТипНепустаяСтрока"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ИНН" type="d3p1:ТипИНН"/>
+	</objectType>
+	<objectType name="ТипСлужебнаяИнформацияНПФ">
+		<property xmlns:d3p1="http://пф.рф/АФ/2017-08-21" ref="d3p1:GUID"/>
+		<property xmlns:d3p1="http://пф.рф/АФ/2017-08-21" ref="d3p1:ВОтветНа" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="http://пф.рф/АФ/2017-08-21" ref="d3p1:ДатаВремя"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Составитель" type="d3p1:ТипОрганизация"/>
+		<property name="НомерДокументаОрганизации">
+			<typeDef xsi:type="ValueType" base="xs:normalizedString" variety="Atomic" minLength="1" maxLength="5">
+				<pattern>\d{1,5}</pattern>
+			</typeDef>
+		</property>
+		<property name="ЗаГод" type="xs:gYear"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ТипПериода" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+		<property name="НомерПериода" type="xs:integer" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипСуммаИД">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Сумма" type="d3p1:ТипДеньги"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ИД" type="d3p1:ТипДеньги"/>
+	</objectType>
+	<objectType name="ТипСуммаИДПредшПериод">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Сумма" type="d3p1:ТипДеньги"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ИДПредшПериод" type="d3p1:ТипДеньги" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ИД" type="d3p1:ТипДеньги" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипСуммаИДЧФР">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Сумма" type="d3p1:ТипДеньгиКоп"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ИД" type="d3p1:ТипДеньгиКоп" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ЧФР" type="d3p1:ТипДеньгиКоп" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипСуммаНПФ">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Сумма" type="d3p1:ТипДеньги"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ИД" type="d3p1:ТипДеньги"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Комп" type="d3p1:ТипДеньги"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ГВосп" type="d3p1:ТипДеньги"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ГВозм" type="d3p1:ТипДеньги"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Итого" type="d3p1:ТипДеньги"/>
+	</objectType>
+</package>

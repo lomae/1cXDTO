@@ -1,0 +1,23 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://пф.рф/ВсВО/НПФ/типыИсходящие/2018-09-12" elementFormQualified="true" attributeFormQualified="false">
+	<import namespace="http://пф.рф/УТ/2017-08-21"/>
+	<import namespace="http://пф.рф/АФ/2017-08-21"/>
+	<import namespace="http://пф.рф/ВсВО/НПФ/типы/2018-09-12"/>
+	<property name="ГрСуммыВзносовЧФР">
+		<typeDef xsi:type="ObjectType">
+			<property xmlns:d4p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="СВ" type="d4p1:ТипСуммаИДЧФР"/>
+			<property xmlns:d4p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="ДСВ" type="d4p1:ТипСуммаИДЧФР"/>
+			<property xmlns:d4p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="СОФН" type="d4p1:ТипСуммаИДЧФР"/>
+			<property xmlns:d4p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="МСК" type="d4p1:ТипСуммаИДЧФР"/>
+		</typeDef>
+	</property>
+	<objectType name="ТипДокументНПФ">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Реквизиты" type="d3p1:ТипРеквизитыДокумента"/>
+		<property name="КодОснованияДокумента" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="НПФ" type="d3p1:ТипСведенияНПФ"/>
+		<property name="Закон" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипПричинаОтказа">
+		<property name="Код" type="xs:string"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Наименование"/>
+	</objectType>
+</package>

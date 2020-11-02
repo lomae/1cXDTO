@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93cc3e15-baac-4937-9232-e109e5cf69eb">
+  <name>Тест</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тест</value>
+  </synonym>
+  <namespace>http://www.bivxd.org</namespace>
+</mdclass:XDTOPackage>

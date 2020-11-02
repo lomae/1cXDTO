@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="506b1d64-2d1c-4d87-948e-f66b9bb202a2">
+  <producedTypes>
+    <objectType typeId="041d1482-a7d4-4103-8ad4-0e1e5e29c645" valueTypeId="9b4c2440-fe3e-4198-b7fc-cf0519a82f04"/>
+    <refType typeId="c14b70a2-9950-4106-98b5-c0dee1eae3ef" valueTypeId="a333f5c1-b56a-4694-862f-e929e22719ec"/>
+    <selectionType typeId="36717a77-2692-4b11-88e9-069772f0a752" valueTypeId="62339f8a-a3b3-464c-b88c-02305a02bee3"/>
+    <listType typeId="d684bf75-8829-41e1-870b-99283d738b84" valueTypeId="8b4b76f4-161b-40b8-bd60-f287016ad75d"/>
+    <managerType typeId="b3ce0c6e-0b7e-485b-a29d-407307ec86d6" valueTypeId="e0f66365-f154-42be-93b1-026861fadb12"/>
+  </producedTypes>
+  <name>ВопросыАнкетаОпросника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вопросы анкета опросника</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВопросыАнкетаОпросника.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВопросыАнкетаОпросника.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="4d2a360f-d3b5-4e50-b459-81e8629d51a0">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+      <types>String</types>
+      <types>Date</types>
+      <types>Number</types>
+      <types>AnyRef</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

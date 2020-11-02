@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2df3afc-2c60-4534-a1b9-c447c2a8a73d">
+  <producedTypes>
+    <selectionType typeId="fc67ac5d-bf59-4daf-aa04-b1be071e025e" valueTypeId="4b0b89b6-4050-4141-92b1-3cdc1a08e664"/>
+    <listType typeId="171f1787-5f4c-46cf-93cb-4f581b23c613" valueTypeId="ef28de5e-2955-4793-8cdf-acbb4e78aa74"/>
+    <managerType typeId="ad0ef46a-c79e-484b-b57b-552d592762fc" valueTypeId="327a60bb-37a7-4dfe-ba4a-e14411816267"/>
+    <recordSetType typeId="3d8236c6-08c6-4f31-80ab-9b8e8e4bd7f9" valueTypeId="a2d50356-8644-415e-bce7-725da7001138"/>
+    <recordKeyType typeId="ad747d5f-93ec-4f4a-a91f-f2a0b368e5e6" valueTypeId="3e9b2cfd-034c-4993-9b89-6af97bae5606"/>
+    <recordType typeId="0aa041a0-46dd-48ad-922d-693e27917ba4" valueTypeId="e7f37f90-5e42-45e5-bcc0-7790709dbca5"/>
+    <recordManagerType typeId="f5013cee-fb52-4e50-92fa-01492a4327e1" valueTypeId="521c7e2b-dd96-4ebf-97d0-ded1f8072aea"/>
+  </producedTypes>
+  <name>ОжидающиеАвторизацииОтБота</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ожидающие авторизации от бота</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="3ce7b9e1-ea2b-4b97-95ae-c39098352efe">
+    <name>ЧатИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чат ИД</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,52 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://пф.рф/НСПН/2020-03-23" elementFormQualified="true" attributeFormQualified="false">
+	<import namespace="http://пф.рф/УТ/2017-08-21"/>
+	<import namespace="http://пф.рф/АФ/2017-08-21"/>
+	<import namespace="http://пф.рф/ВсВО/НПФ/типы/2018-09-12"/>
+	<import namespace="http://пф.рф/ВсВО/НПФ/типыИсходящие/2018-09-12"/>
+	<import namespace="http://www.w3.org/2000/09/xmldsig#"/>
+	<property name="ЭДПФР">
+		<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+			<property name="НСПН">
+				<typeDef xmlns:d5p1="http://пф.рф/ВсВО/НПФ/типыИсходящие/2018-09-12" xsi:type="ObjectType" base="d5p1:ТипДокументНПФ">
+					<property name="СписокСведений">
+						<typeDef xsi:type="ObjectType">
+							<property name="Запись" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property name="НомерПП" type="xs:positiveInteger"/>
+									<property name="ВходящийНомерПП" type="xs:positiveInteger"/>
+									<property name="ДатаЗапроса" type="xs:date" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="ЗЛ" type="d10p1:ТипЗастрахованноеЛицо"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="Договор" type="d10p1:ТипРеквизитыДокумента" lowerBound="0"/>
+									<property name="Суммы">
+										<typeDef xsi:type="ObjectType">
+											<property xmlns:d12p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="СВ" type="d12p1:ТипСуммаИДЧФР"/>
+											<property xmlns:d12p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="ДСВ" type="d12p1:ТипСуммаИДЧФР"/>
+											<property xmlns:d12p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="СОФН" type="d12p1:ТипСуммаИДЧФР"/>
+											<property xmlns:d12p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="МСК" type="d12p1:ТипСуммаИДЧФР"/>
+										</typeDef>
+									</property>
+									<property name="ПравоНаСтаховыеВыплаты">
+										<typeDef xsi:type="ObjectType">
+											<property name="ЕстьПравоНаСтраховуюПенсиюПоСтарости" type="xs:boolean"/>
+											<property name="ДатаПрава" type="xs:date" lowerBound="0"/>
+											<property name="ПравоНаДосрочнуюПенсию" lowerBound="0">
+												<typeDef xsi:type="ObjectType">
+													<property xmlns:d14p1="http://пф.рф/УТ/2017-08-21" name="НормативныйАкт" type="d14p1:ТипПунктНормативногоДокумента"/>
+													<property name="Дата" type="xs:date"/>
+												</typeDef>
+											</property>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="Сумма" type="d12p1:ТипДеньгиНеотрицательный" lowerBound="0"/>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+					<property name="КоличествоЗЛ" type="xs:positiveInteger"/>
+				</typeDef>
+			</property>
+			<property xmlns:d4p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="СлужебнаяИнформация" type="d4p1:ТипСлужебнаяИнформацияНПФ"/>
+			<property xmlns:d4p1="http://www.w3.org/2000/09/xmldsig#" ref="d4p1:Signature" lowerBound="0"/>
+		</typeDef>
+	</property>
+</package>

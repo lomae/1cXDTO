@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92fd50d4-6e35-483d-8b05-52223714ad2a">
+  <name>Договоры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Договоры</value>
+  </synonym>
+  <rootURL>dogReturn</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="c630b5c2-3c89-4f79-9290-5d2c57791b55">
+    <name>dogApi</name>
+    <synonym>
+      <key>ru</key>
+      <value>Dog api</value>
+    </synonym>
+    <template>/{ИмяМетода}</template>
+    <methods uuid="1e49ccb9-1955-4b69-8cbf-30238b3a9bf4">
+      <name>postZapros</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post zapros</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>dogApiМетод</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a1131724-9c6b-4dd1-b069-c1639f83344d">
+  <producedTypes>
+    <objectType typeId="de29b3c5-5301-4108-823f-1562ef43efc3" valueTypeId="e3af78b3-89d1-42ca-981e-9ca0376ce2d5"/>
+    <refType typeId="b68c576a-52b7-4e16-95f8-fcf83301098d" valueTypeId="ba22940d-1f6d-47b2-a7a1-088c952da5d6"/>
+    <selectionType typeId="7f48be23-4d39-4911-83fb-9a335e4ae96c" valueTypeId="a32c58e7-ed8e-4f8b-bc60-ace8a30aef66"/>
+    <listType typeId="829eec8d-a737-4de9-b077-10e48bdadd6b" valueTypeId="32d5b0a9-a862-4619-a1f6-d26ce4834287"/>
+    <managerType typeId="741a7f08-ccf8-4e60-9134-547b2603c4a3" valueTypeId="07b40853-4062-43e3-83ad-0bb58b76a61c"/>
+  </producedTypes>
+  <name>Анкета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анкета</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Анкета.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+</mdclass:Document>

@@ -1,0 +1,47 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://пф.рф/ВсВО/НПФ/типыВходящие/2018-09-12" elementFormQualified="true" attributeFormQualified="false">
+	<import namespace="http://пф.рф/УТ/2017-08-21"/>
+	<import namespace="http://пф.рф/АФ/2017-08-21"/>
+	<import namespace="http://пф.рф/ВсВО/НПФ/типы/2018-09-12"/>
+	<objectType name="ТипЗаписьАкта">
+		<property name="НомерПП" type="xs:positiveInteger"/>
+		<property xmlns:d3p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="ЗЛ" type="d3p1:ТипЗастрахованноеЛицо"/>
+		<property name="СуммыПереданные" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="СВ" type="d5p1:ТипСуммаИД" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="ДСВ" type="d5p1:ТипСуммаИД" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="СОФН" type="d5p1:ТипСуммаИД" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="МСК" type="d5p1:ТипСуммаИД" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" name="ВсегоСПН" type="d5p1:ТипДеньги"/>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ВыплатнойРезерв" type="d3p1:ТипДеньги" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="РезервСрочныеВыплаты" type="d3p1:ТипДеньги" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ЕВ" type="d3p1:ТипДеньги" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ВсегоУчтено" type="d3p1:ТипДеньги"/>
+		<property name="НазначенныеВыплаты">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" name="ЕВ" type="d5p1:ТипДеньги" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" name="НЧТП" type="d5p1:ТипДеньги" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" name="НЧТПОПС" type="d5p1:ТипДеньги" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" name="СПВ" type="d5p1:ТипДеньги" lowerBound="0"/>
+				<property name="НомерПП" type="xs:positiveInteger" lowerBound="0"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="ТипЗаписьРеестра">
+		<property name="НомерПП" type="xs:positiveInteger"/>
+		<property xmlns:d3p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="ЗЛ" type="d3p1:ТипЗастрахованноеЛицо"/>
+		<property name="СуммыПереданные" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="СВ" type="d5p1:ТипСуммаИД" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="ДСВ" type="d5p1:ТипСуммаИД" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="СОФН" type="d5p1:ТипСуммаИД" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="МСК" type="d5p1:ТипСуммаИД" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" name="ВсегоСПН" type="d5p1:ТипДеньги"/>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ГарантийноеВосполнение" type="d3p1:ТипДеньги" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Компенсация" type="d3p1:ТипДеньги" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ВсегоПередано" type="d3p1:ТипДеньги"/>
+	</objectType>
+</package>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="01766d17-a4c9-40dc-8142-3a9c047269e1">
+  <producedTypes>
+    <listType typeId="6d5fa35c-f63c-462b-9d6a-ef2f8d01b2a3" valueTypeId="d550f122-b16b-4263-beb1-95ec558a500e"/>
+    <managerType typeId="6890668f-f25d-48fa-8a5d-74c7d744c236" valueTypeId="3f5dd1cb-66c9-47f8-aa81-ad8db320cfea"/>
+  </producedTypes>
+  <name>Анкета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анкета</value>
+  </synonym>
+  <type>
+    <types>DefinedType.ДокументАнкетыОпросника</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:FilterCriterion>

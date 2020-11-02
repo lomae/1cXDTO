@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f031c7dc-d2a6-46e3-81b9-8656a1a9f98a">
+  <name>ПФР_типыВходящие</name>
+  <synonym>
+    <key>ru</key>
+    <value>ПФР типы входящие</value>
+  </synonym>
+  <namespace>http://пф.рф/ВсВО/НПФ/типыВходящие/2018-09-12</namespace>
+</mdclass:XDTOPackage>

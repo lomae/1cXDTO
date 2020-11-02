@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1373770-5f97-47e6-a50a-e2cabdbf43ec">
+  <producedTypes>
+    <selectionType typeId="66c3bce6-9a8c-4b20-9a49-0a7783b63fc8" valueTypeId="26f3b5db-4524-4147-b30f-bdaf3b10a842"/>
+    <listType typeId="1075abab-0015-4129-80e4-61ee69cbd430" valueTypeId="e97d9c59-65dd-4414-b1e0-df5875c4045a"/>
+    <managerType typeId="85998f38-13c4-4bf9-a452-b321c0caab96" valueTypeId="7bd00a5c-d27c-4659-b19e-d178ef956abc"/>
+    <recordSetType typeId="cf11bec7-ffb4-4a9d-8d3a-ddb5198e61ba" valueTypeId="88937817-279d-477f-b12c-d4578631c9d2"/>
+    <recordKeyType typeId="b930d340-ae11-4040-9428-fcc1e4545072" valueTypeId="93af610a-ed2d-4fc8-8b91-0c9fe1bbe865"/>
+    <recordType typeId="550252c0-8e27-4cb5-9a76-7568379d439d" valueTypeId="3a6c508b-7ef6-43a3-b0f6-43ea03eb85f0"/>
+    <recordManagerType typeId="6672d42f-acc9-4f82-b64e-ccd5a244e945" valueTypeId="9044ee1b-5bdd-46b4-9d5a-dea3919450dc"/>
+  </producedTypes>
+  <name>АвторизованныеПользователиБота</name>
+  <synonym>
+    <key>ru</key>
+    <value>Авторизованные пользователи бота</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="246dc1a8-9fa8-40dd-82e6-5b791218b0c3">
+    <name>ЧатИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чат ИД</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b4b70b1d-a628-45ab-8705-c2038ec62592">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

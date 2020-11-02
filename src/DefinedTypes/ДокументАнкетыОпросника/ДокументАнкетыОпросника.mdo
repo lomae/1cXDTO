@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1276aeab-7a28-43ca-8166-e62db9d2cc04">
+  <producedTypes>
+    <containerType typeId="bb0649d5-ed88-4c71-82fe-83045e44b324" valueTypeId="65b25fa9-ad7a-49e8-897f-b1b4d8d9c606"/>
+  </producedTypes>
+  <name>ДокументАнкетыОпросника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документ анкеты опросника</value>
+  </synonym>
+  <type>
+    <types>DocumentRef.ИзменениеБанковскихРеквизитов</types>
+    <types>DocumentRef.АнкетаОпросник</types>
+  </type>
+</mdclass:DefinedType>

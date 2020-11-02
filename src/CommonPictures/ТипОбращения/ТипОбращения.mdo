@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="883b5410-1d5e-4970-b253-8af53cd2d3a8">
+  <name>ТипОбращения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип обращения</value>
+  </synonym>
+  <availabilityForChoice>true</availabilityForChoice>
+  <availabilityForAppearance>true</availabilityForAppearance>
+</mdclass:CommonPicture>

@@ -1,0 +1,490 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://пф.рф/УТ/2017-08-21" elementFormQualified="true" attributeFormQualified="false">
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="Адрес" type="d2p1:ТипАдресФИАС"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="АдресИностранный" type="d2p1:ТипАдресИностранный"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="АдресПребывания" type="d2p1:ТипАдресОбщий"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="АдресРегистрации" type="d2p1:ТипАдресОбщий"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="АдресФактический" type="d2p1:ТипАдресОбщий"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="АдресЭлПочты" type="d2p1:ТипАдресЭлПочты"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="БИК" type="d2p1:ТипБИК"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="Банк" type="d2p1:ТипРеквизитыБанка"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="БанковскиеРеквизиты" type="d2p1:ТипБанковскиеРеквизиты"/>
+	<property name="Гражданства">
+		<typeDef xsi:type="ObjectType">
+			<property xmlns:d4p1="http://пф.рф/УТ/2017-08-21" ref="d4p1:Гражданство" upperBound="-1"/>
+		</typeDef>
+	</property>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="Гражданство" type="d2p1:ТипГражданство"/>
+	<property name="ДатаРождения" type="xs:date"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ДатаРожденияОсобая" type="d2p1:ТипДатаОсобая"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="День" type="d2p1:ТипДень"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ДокументПодтверждающийПолномочия" type="d2p1:ТипПодтверждающийДокумент"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ИНН" type="d2p1:ТипИНН"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="Имя" type="d2p1:ТипНепустаяСтрока"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="Индекс" type="d2p1:ТипИндекс"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="КБК" type="d2p1:ТипКБК"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="КПП" type="d2p1:ТипКПП"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="КСчет" type="d2p1:ТипБанковскийСчет"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="КемВыдан" type="d2p1:ТипНепустаяСтрока"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="КодЕГРИП" type="d2p1:ТипКодЕГРИП"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="КодЕГРЮЛ" type="d2p1:ТипКодЕГРЮЛ"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="КодПоОКВЭД" type="d2p1:ТипКодПоОКВЭД"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="КодРегионаПФР" type="d2p1:ТипКодРегионаПФР"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="КодСтраны" type="d2p1:ТипКодСтраны"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="КодТОПФР" type="d2p1:ТипКодТОПФР"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="МестоРождения" type="d2p1:ТипМестоРождения"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="Месяц" type="d2p1:ТипМесяц"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="Наименование" type="d2p1:ТипНепустаяСтрока"/>
+	<property name="НаименованиеКраткое">
+		<typeDef xmlns:d3p1="http://пф.рф/УТ/2017-08-21" xsi:type="ValueType" base="d3p1:ТипНепустаяСтрока" variety="Atomic" minLength="1" maxLength="255"/>
+	</property>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="НеструктурированныйАдрес" type="d2p1:ТипНепустаяСтрока"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ОКАТО" type="d2p1:ТипКодПоОКАТО"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ОКТМО" type="d2p1:ТипКодПоОКТМО"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="Отчество" type="d2p1:ТипНепустаяСтрока"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="Пол" type="d2p1:ТипПол"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="РСчет" type="d2p1:ТипБанковскийСчет"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="РегНомер" type="d2p1:ТипРегНомер"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="СНИЛС" type="d2p1:ТипСтраховойНомер"/>
+	<property name="СрокДействия" type="xs:date"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="Телефон" type="d2p1:ТипНомерТелефона"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="Телефоны" type="d2p1:ТипСписокТелефонов"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ТипПредставителя" type="d2p1:ТипТипПредставителя"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="УИН" type="d2p1:ТипУИН"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="УдостоверяющийДокумент" type="d2p1:ТипУдостоверяющийДокумент"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ФИО" type="d2p1:ТипФИО"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="Фамилия" type="d2p1:ТипНепустаяСтрока"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ФамилияРожд" type="d2p1:ТипНепустаяСтрока"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ФормаПредставительства" type="d2p1:ТипФормаПредставительства"/>
+	<property xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ЮрАдрес" type="d2p1:ТипАдресОбщий"/>
+	<valueType name="ТипGUID" base="xs:string" variety="Atomic">
+		<pattern>([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})|(\{[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\})</pattern>
+	</valueType>
+	<valueType name="ТипАдресЭлПочты" base="xs:normalizedString" variety="Atomic">
+		<pattern>[^@]+@[^\.]+\..+</pattern>
+	</valueType>
+	<valueType name="ТипБИК" base="xs:normalizedString" variety="Atomic">
+		<pattern>\d{9}</pattern>
+	</valueType>
+	<valueType xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ТипБанковскийСчет" base="d2p1:ТипНепустаяСтрока" variety="Atomic">
+		<pattern>\d{20}</pattern>
+	</valueType>
+	<valueType name="ТипДень" base="xs:integer" variety="Atomic" minInclusive="1" maxInclusive="31" totalDigits="2">
+		<pattern>\d+</pattern>
+	</valueType>
+	<valueType name="ТипДеньги" base="xs:decimal" variety="Atomic">
+		<pattern>\-?[0-9]+\.\d{2}</pattern>
+		<pattern>\-?[0-9]+</pattern>
+	</valueType>
+	<valueType name="ТипДеньгиКоп" base="xs:decimal" variety="Atomic">
+		<pattern>\-?[0-9]+\.\d{2}</pattern>
+	</valueType>
+	<valueType xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ТипДеньгиКопПоложительный" base="d2p1:ТипДеньгиКоп" variety="Atomic" minInclusive="0.01"/>
+	<valueType xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ТипДеньгиНеотрицательный" base="d2p1:ТипДеньги" variety="Atomic" minInclusive="0"/>
+	<valueType name="ТипДоля" base="xs:decimal" variety="Atomic" totalDigits="8" fractionDigits="5">
+		<pattern>\+?[0-9]+\.\d{5}</pattern>
+		<pattern>\+?[0-9]+\.\d{2}</pattern>
+	</valueType>
+	<valueType name="ТипИНН" base="xs:string" variety="Atomic">
+		<pattern>\d{10}</pattern>
+		<pattern>\d{12}</pattern>
+	</valueType>
+	<valueType name="ТипИНН_ФЛ" base="xs:string" variety="Atomic">
+		<pattern>\d{12}</pattern>
+	</valueType>
+	<valueType name="ТипИНН_ЮЛ" base="xs:string" variety="Atomic">
+		<pattern>\d{10}</pattern>
+	</valueType>
+	<valueType name="ТипИндекс" base="xs:string" variety="Atomic">
+		<pattern>\d{5,7}</pattern>
+		<pattern/>
+	</valueType>
+	<valueType name="ТипКБК" base="xs:string" variety="Atomic">
+		<pattern>\d{20}</pattern>
+	</valueType>
+	<valueType name="ТипКПП" base="xs:string" variety="Atomic">
+		<pattern>\d{9}</pattern>
+	</valueType>
+	<valueType name="ТипКадастровыйНомер" base="xs:string" variety="Atomic" maxLength="25">
+		<pattern>(\d+:){3}\d+(/\d+)?</pattern>
+	</valueType>
+	<valueType name="ТипКодЕГРИП" base="xs:string" variety="Atomic">
+		<pattern>\d{15}</pattern>
+		<pattern>0</pattern>
+	</valueType>
+	<valueType name="ТипКодЕГРЮЛ" base="xs:string" variety="Atomic">
+		<pattern>\d{13}</pattern>
+		<pattern>0</pattern>
+	</valueType>
+	<valueType name="ТипКодПоОКАТО" base="xs:string" variety="Atomic" maxLength="11">
+		<pattern>[0-9]*</pattern>
+	</valueType>
+	<valueType name="ТипКодПоОКВЭД" base="xs:string" variety="Atomic">
+		<pattern>\d{2}\.\d{2}\.\d{2}</pattern>
+		<pattern>\d{2}\.\d{2}\.\d{1}</pattern>
+		<pattern>\d{2}\.\d{2}</pattern>
+		<pattern>\d{2}\.\d{1}</pattern>
+		<pattern>\d{2}</pattern>
+	</valueType>
+	<valueType name="ТипКодПоОКТМО" base="xs:string" variety="Atomic" maxLength="11">
+		<pattern>[0-9]*</pattern>
+	</valueType>
+	<valueType name="ТипКодРегионаПФР" base="xs:normalizedString" variety="Atomic">
+		<pattern>0([0-1]){1}\d</pattern>
+		<pattern>0(20|24|27|28){1}</pattern>
+		<pattern>03[0-3]</pattern>
+		<pattern>03[5-9]</pattern>
+		<pattern>04\d{1}</pattern>
+		<pattern>0(50|(5[2-6])|(5[8-9])){1}</pattern>
+		<pattern>06[1-8]</pattern>
+		<pattern>07\d</pattern>
+		<pattern>08([0-4]|6|9)</pattern>
+		<pattern>09([0-2])</pattern>
+		<pattern>20[1-7]</pattern>
+	</valueType>
+	<valueType xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ТипКодСтраны" base="d2p1:ТипНепустаяСтрока" variety="Atomic">
+		<pattern>\d{3}</pattern>
+	</valueType>
+	<valueType name="ТипКодТОПФР" base="xs:string" variety="Atomic">
+		<pattern>\d{3,6}</pattern>
+	</valueType>
+	<valueType name="ТипКоличествоДней" base="xs:integer" variety="Atomic" minInclusive="0" maxInclusive="30">
+		<pattern>\d+</pattern>
+	</valueType>
+	<valueType name="ТипКоличествоМесяцев" base="xs:integer" variety="Atomic" minInclusive="0" maxInclusive="11">
+		<pattern>\d+</pattern>
+	</valueType>
+	<valueType name="ТипМесяц" base="xs:integer" variety="Atomic" minInclusive="1" maxInclusive="12">
+		<pattern>\d+</pattern>
+	</valueType>
+	<valueType name="ТипМинута" base="xs:integer" variety="Atomic" minInclusive="0" maxInclusive="59">
+		<pattern>\d+</pattern>
+	</valueType>
+	<valueType name="ТипНепустаяСтрока" base="xs:normalizedString" variety="Atomic" minLength="1"/>
+	<valueType name="ТипНомерТелефона" base="xs:string" variety="Atomic" maxLength="15">
+		<pattern>\d*</pattern>
+	</valueType>
+	<valueType name="ТипПол" base="xs:string" variety="Atomic">
+		<enumeration>М</enumeration>
+		<enumeration>Ж</enumeration>
+	</valueType>
+	<valueType name="ТипРегНомер" base="xs:string" variety="Atomic">
+		<pattern>\d{3}-\d{3}-\d{6}</pattern>
+	</valueType>
+	<valueType name="ТипСтраховойНомер" base="xs:string" variety="Atomic">
+		<pattern>\d{3}-\d{3}-\d{3} \d{2}</pattern>
+		<pattern>\d{3}-\d{3}-\d{3}-\d{2}</pattern>
+	</valueType>
+	<valueType name="ТипТипПредставителя" base="xs:integer" variety="Atomic">
+		<pattern>\d+</pattern>
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+	</valueType>
+	<valueType name="ТипТипУД" base="xs:string" variety="Atomic">
+		<enumeration>ПАСПОРТ</enumeration>
+		<enumeration>ПАСПОРТ РОССИИ</enumeration>
+		<enumeration>СВИД О РОЖД</enumeration>
+		<enumeration>СПРАВКА ОБ ОСВ</enumeration>
+		<enumeration>СВИД БЕЖЕНЦА</enumeration>
+		<enumeration>ВИД НА ЖИТЕЛЬ</enumeration>
+		<enumeration>УДОСТ БЕЖЕНЦА</enumeration>
+		<enumeration>ВОЕННЫЙ БИЛЕТ</enumeration>
+		<enumeration>УДОСТ ЛИЧН ВОЕН</enumeration>
+		<enumeration>ДИППАСПОРТ РФ</enumeration>
+		<enumeration>ПАСПОРТ МОРФЛТ</enumeration>
+		<enumeration>ПАСПОРТ МОРЯКА</enumeration>
+		<enumeration>ЗГПАСПОРТ</enumeration>
+		<enumeration>ИНПАСПОРТ</enumeration>
+		<enumeration>ЗГПАСПОРТ РФ</enumeration>
+		<enumeration>СЛУЖ ПАСПОРТ</enumeration>
+		<enumeration>ВРЕМ УДОСТ</enumeration>
+		<enumeration>ВОЕН БИЛЕТ ОЗ</enumeration>
+		<enumeration>УДОСТ ОФИЦЕРА</enumeration>
+		<enumeration>ПРОЧЕЕ</enumeration>
+	</valueType>
+	<valueType name="ТипУИН" base="xs:string" variety="Atomic">
+		<pattern>\d{20,23}</pattern>
+	</valueType>
+	<valueType name="ТипФормаПредставительства" base="xs:integer" variety="Atomic">
+		<pattern>\d+</pattern>
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+		<enumeration>3</enumeration>
+		<enumeration>4</enumeration>
+	</valueType>
+	<objectType name="ТипАдресИностранный">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Индекс" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:КодСтраны"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="НазваниеСтраны" type="d3p1:ТипНепустаяСтрока"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="АдресКириллицей" type="d3p1:ТипНепустаяСтрока"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="АдресЛатиницей" type="d3p1:ТипНепустаяСтрока"/>
+	</objectType>
+	<objectType name="ТипАдресОбщий" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="GUID" type="d3p1:ТипGUID" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Индекс" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Регион" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Округ" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Район" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Город" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ВнутригородскойРайон" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="НаселенныйПункт" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Улица" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property name="Дом" lowerBound="0">
+			<typeDef xmlns:d4p1="http://пф.рф/УТ/2017-08-21" xsi:type="ValueType" base="d4p1:ТипНепустаяСтрока" variety="Atomic" maxLength="20"/>
+		</property>
+		<property name="Строение" lowerBound="0">
+			<typeDef xmlns:d4p1="http://пф.рф/УТ/2017-08-21" xsi:type="ValueType" base="d4p1:ТипНепустаяСтрока" variety="Atomic" maxLength="10"/>
+		</property>
+		<property name="Владение" lowerBound="0">
+			<typeDef xmlns:d4p1="http://пф.рф/УТ/2017-08-21" xsi:type="ValueType" base="d4p1:ТипНепустаяСтрока" variety="Atomic" maxLength="10"/>
+		</property>
+		<property name="Корпус" lowerBound="0">
+			<typeDef xmlns:d4p1="http://пф.рф/УТ/2017-08-21" xsi:type="ValueType" base="d4p1:ТипНепустаяСтрока" variety="Atomic" maxLength="10"/>
+		</property>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Квартира" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Иностранный" type="d3p1:ТипАдресИностранный" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Неструктурированный" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипАдресФИАС">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="GUID" type="d3p1:ТипGUID" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Индекс" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Регион" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Округ" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Район" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Город" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ВнутригородскойРайон" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="НаселенныйПункт" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Улица" type="d3p1:ТипГеография" lowerBound="0"/>
+		<property name="Дом" lowerBound="0">
+			<typeDef xmlns:d4p1="http://пф.рф/УТ/2017-08-21" xsi:type="ValueType" base="d4p1:ТипНепустаяСтрока" variety="Atomic" maxLength="20"/>
+		</property>
+		<property name="Строение" lowerBound="0">
+			<typeDef xmlns:d4p1="http://пф.рф/УТ/2017-08-21" xsi:type="ValueType" base="d4p1:ТипНепустаяСтрока" variety="Atomic" maxLength="10"/>
+		</property>
+		<property name="Владение" lowerBound="0">
+			<typeDef xmlns:d4p1="http://пф.рф/УТ/2017-08-21" xsi:type="ValueType" base="d4p1:ТипНепустаяСтрока" variety="Atomic" maxLength="10"/>
+		</property>
+		<property name="Корпус" lowerBound="0">
+			<typeDef xmlns:d4p1="http://пф.рф/УТ/2017-08-21" xsi:type="ValueType" base="d4p1:ТипНепустаяСтрока" variety="Atomic" maxLength="10"/>
+		</property>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Квартира" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипАнкетаЮрЛица">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Наименование" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:ЮрАдрес" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Адрес1" type="d3p1:ТипАдресОбщий" lowerBound="0" localName="Адрес"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Телефоны" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:АдресЭлПочты" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:БанковскиеРеквизиты" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипБанковскиеРеквизиты">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="РСчет1" type="d3p1:ТипБанковскийСчет" localName="РСчет"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Банк"/>
+	</objectType>
+	<objectType name="ТипВременнойПериод">
+		<property name="С" type="xs:date"/>
+		<property name="По" type="xs:date"/>
+	</objectType>
+	<objectType name="ТипГеография">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Название" type="d3p1:ТипНепустаяСтрока"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Сокращение" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипГражданство">
+		<property name="Тип">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<pattern>\d+</pattern>
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+			</typeDef>
+		</property>
+		<property name="Государство" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" ref="d5p1:Наименование"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" ref="d5p1:КодСтраны"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="ТипДатаОсобая">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:День" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Месяц" lowerBound="0"/>
+		<property name="Год" type="xs:gYear"/>
+	</objectType>
+	<objectType name="ТипДолжностноеЛицо">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ФИО" type="d3p1:ТипФИО"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Должность" type="d3p1:ТипНепустаяСтрока"/>
+	</objectType>
+	<objectType name="ТипКонтактноеДолжностноеЛицо">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ФИО" type="d3p1:ТипФИО"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Должность" type="d3p1:ТипНепустаяСтрока"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Телефон" type="d3p1:ТипНомерТелефона" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипМестоРождения">
+		<property name="Тип">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<pattern>\d+</pattern>
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Город" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Район" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Регион" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Страна" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипОзнакомлениеЗаявителя">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ПредметОзнакомления" type="d3p1:ТипНепустаяСтрока"/>
+		<property name="Ознакомлен" type="xs:boolean"/>
+	</objectType>
+	<objectType name="ТипОрганизация" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:ИНН" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:КПП" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:КодЕГРИП" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:КодЕГРЮЛ" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Форма" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Наименование" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:НаименованиеКраткое" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:РегНомер" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Адрес" type="d3p1:ТипАдресОбщий" lowerBound="0" localName="Адрес"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Подразделение" type="d3p1:ТипПодразделениеОрганизации" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипОрганизацияПФР">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Наименование"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:НаименованиеКраткое" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Адрес" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Телефоны" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:АдресЭлПочты" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипОткрытыйВременнойПериод">
+		<property name="С" type="xs:date"/>
+		<property name="По" type="xs:date" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипПодразделениеОрганизации">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Наименование"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Номер" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипПодтверждающийДокумент">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Наименование"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Серия" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Номер" type="d3p1:ТипНепустаяСтрока"/>
+		<property name="ДатаВыдачи" type="xs:date"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:КемВыдан"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:СрокДействия" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипПредставительФЛ-ЮЛ">
+		<property name="АнкетныеДанные">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" ref="d5p1:ФИО"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" ref="d5p1:СНИЛС" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" ref="d5p1:Гражданство" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" name="АдресРегистрации1" type="d5p1:ТипАдресОбщий" lowerBound="0" localName="АдресРегистрации"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" name="АдресПребывания1" type="d5p1:ТипАдресОбщий" lowerBound="0" localName="АдресПребывания"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" name="АдресФактический1" type="d5p1:ТипАдресОбщий" lowerBound="0" localName="АдресФактический"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" ref="d5p1:Телефоны" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" ref="d5p1:УдостоверяющийДокумент"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" ref="d5p1:ДатаРождения" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" ref="d5p1:ДатаРожденияОсобая" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" ref="d5p1:МестоРождения" lowerBound="0"/>
+				<property xmlns:d5p1="http://пф.рф/УТ/2017-08-21" ref="d5p1:Пол" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Тип" type="d3p1:ТипТипПредставителя"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:ФормаПредставительства" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ЮридическоеЛицо" type="d3p1:ТипАнкетаЮрЛица" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:ДокументПодтверждающийПолномочия"/>
+	</objectType>
+	<objectType name="ТипПрилагаемыеДокументы">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ПрилагаемыйДокумент" type="d3p1:ТипПрилагаемыйДокумент" upperBound="-1"/>
+	</objectType>
+	<objectType name="ТипПрилагаемыйДокумент">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Наименование"/>
+		<property name="Реквизиты" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="Реквизит" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://пф.рф/УТ/2017-08-21" ref="d7p1:Наименование"/>
+						<property xmlns:d7p1="http://пф.рф/УТ/2017-08-21" name="Значение" type="d7p1:ТипНепустаяСтрока"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="ПредставленностьДокумента" type="xs:integer" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипПрилагаемыйДокументНумерованный">
+		<property name="НомерПП" type="xs:positiveInteger"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Наименование"/>
+		<property name="Реквизиты" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="Реквизит" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://пф.рф/УТ/2017-08-21" ref="d7p1:Наименование"/>
+						<property xmlns:d7p1="http://пф.рф/УТ/2017-08-21" name="Значение" type="d7p1:ТипНепустаяСтрока"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="ПредставленностьДокумента" type="xs:integer" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипПунктНормативногоДокумента">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="НормативныйДокумент" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Статья" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Часть" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Пункт" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Подпункт" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипРеквизитыБанка">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Наименование"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Адрес1" type="d3p1:ТипАдресОбщий" localName="Адрес"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:КСчет"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:БИК"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:ИНН"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:КПП" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://пф.рф/УТ/2017-08-21" name="ТипРеквизитыДоговора" base="d2p1:ТипРеквизитыДокумента">
+		<property ref="d2p1:Наименование" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипРеквизитыДокумента">
+		<property name="Дата" type="xs:date"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Номер" type="d3p1:ТипНепустаяСтрока"/>
+	</objectType>
+	<objectType name="ТипСведенияТОПФР">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Код" type="d3p1:ТипКодТОПФР"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Наименование"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:НаименованиеКраткое" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Адрес" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Телефоны" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:АдресЭлПочты" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипСписокОзнакомленийЗаявителя">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="ОзнакомлениеЗаявителя" type="d3p1:ТипОзнакомлениеЗаявителя" upperBound="-1"/>
+	</objectType>
+	<objectType name="ТипСписокТелефонов">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Телефон" type="d3p1:ТипНомерТелефона" upperBound="-1"/>
+	</objectType>
+	<objectType name="ТипТОПФР">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Код" type="d3p1:ТипКодТОПФР"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Наименование"/>
+	</objectType>
+	<objectType name="ТипТОПФРсАдресом">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Код" type="d3p1:ТипКодТОПФР"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Наименование"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Адрес" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипУдостоверяющийДокумент">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Тип" type="d3p1:ТипТипУД"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Серия" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="Номер" type="d3p1:ТипНепустаяСтрока"/>
+		<property name="ДатаВыдачи" type="xs:date"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:КемВыдан"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:СрокДействия" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" name="КодПодразделения" type="d3p1:ТипНепустаяСтрока" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипФИО">
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Фамилия" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Имя" lowerBound="0"/>
+		<property xmlns:d3p1="http://пф.рф/УТ/2017-08-21" ref="d3p1:Отчество" lowerBound="0"/>
+	</objectType>
+	<objectType name="ТипЧасовойПериод">
+		<property name="С" type="xs:time"/>
+		<property name="По" type="xs:time"/>
+	</objectType>
+</package>

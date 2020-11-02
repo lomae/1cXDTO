@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d60cd52-f8d6-44af-8098-1c993118b8b8">
+  <name>Обработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработки</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.СозданиеXML</content>
+  <parentSubsystem>Subsystem.Телеграм</parentSubsystem>
+</mdclass:Subsystem>

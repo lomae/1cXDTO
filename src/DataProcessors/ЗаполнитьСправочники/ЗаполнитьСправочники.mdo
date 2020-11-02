@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5543b895-54db-43a7-8b64-4bbe0ecaea37">
+  <producedTypes>
+    <objectType typeId="d6748faa-dffd-4ada-8605-18bc34760d29" valueTypeId="597085a8-315d-4e8b-bf50-4239a80aaa76"/>
+    <managerType typeId="a591edb3-93e8-47cd-a2c8-263200dfaa9e" valueTypeId="f07f195b-291d-4abf-81c7-015320c5841b"/>
+  </producedTypes>
+  <name>ЗаполнитьСправочники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнить справочники</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗаполнитьСправочники.Form.Форма</defaultForm>
+  <attributes uuid="ea5b322b-f589-4fb9-bbbe-cef17ccb4536">
+    <name>Справочник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="56ca70a9-6f7f-4b15-976e-1f67fd4fefaf">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="405d557d-98e6-41df-b980-30be9dcca8b7">
+    <name>НачинатьСНомера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начинать с номера</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="936c304d-167b-4fe4-bc26-b3fbaf6eac8c">
+    <name>КоличествоДобавляемыхЭлементов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество добавляемых элементов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="4a5595d5-a425-4eb7-a503-6ba6d978a7ee">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe91ea57-7dc7-4639-8663-1350952e8613">
+  <producedTypes>
+    <selectionType typeId="8b9e1f04-dfb2-4366-8828-bccccc9a9e00" valueTypeId="b52ec987-b6ce-4081-b2cb-f1396d400294"/>
+    <listType typeId="4b396f14-f705-49e9-852e-c61bab27f2fc" valueTypeId="76c0307a-29b7-4075-93ad-d816c388fce8"/>
+    <managerType typeId="288eb4ab-fc13-4ea6-9ef7-383482120d3d" valueTypeId="146958cf-d4dd-47cd-b868-c8f1b6959006"/>
+    <recordSetType typeId="b643b318-5dd7-499f-b91d-e1f30f635d68" valueTypeId="1ff97a02-fa08-43da-8f4e-bd7bd9dab41f"/>
+    <recordKeyType typeId="8a7418df-8f1b-44ce-838e-a4fa8eb7a491" valueTypeId="ed2e3627-a111-4ced-8be9-05c1a33d420c"/>
+    <recordType typeId="4904d32a-d3ba-435d-9726-c71b42b553b6" valueTypeId="02d36b2d-6dbb-4387-8a1c-65dea568e8ed"/>
+    <recordManagerType typeId="13d1beba-b4a3-42d0-8558-e3cc1b0363e7" valueTypeId="50390905-6404-45f0-a397-1fee4ca42734"/>
+  </producedTypes>
+  <name>АнкетаОпросник</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анкета опросник</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.АнкетаОпросник.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="56e7dab8-b4ac-418b-bad3-e7b2ffc87af7">
+    <name>СтатусФизическогоЛица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус физического лица</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="e80082f4-9bdc-4b37-8a16-2f537196ee89">
+    <name>Гражданство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гражданство</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="99649b1c-69f2-46a4-ae0c-9ae6814d2f82">
+    <name>ЯвляетсяНалогоплатильщикомИностранногоГосударства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Является налогоплатильщиком иностранного государства</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="41461109-ffe0-44c2-ad02-67652a250ab6">
+    <name>СтранаНалогоплатильщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страна налогоплатильщика</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="d35d1c22-4385-4602-a086-94d68ac37f89">
+    <name>НаличиеДвойногоГражданства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наличие двойного гражданства</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="93faec7a-5c12-477d-929c-c749b8c073a7">
+    <name>СтраныДвойногоГражданства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страны двойного гражданства</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="105eb1e9-6f58-4045-b240-4cf782fe8a6e">
+    <name>ТипПДЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип ПДЛ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="455bfc3d-c72c-4f1f-b554-68219b1b2c3e">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="c5a0ad07-dfb1-4744-ad2e-99d11c30b1c0">
+    <name>МестоРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место работы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="a00e1b4c-1891-4bd8-80a5-2b3d1dcc7b38">
+    <name>ИсточникДохода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник дохода</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="6679e2cc-bf2c-4661-afba-8c062183130e">
+    <name>СтепеньРодства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Степень родства</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="49aeca71-08e5-460a-85c8-3886a9b0a3c9">
+    <name>БенефициарныйВладелец</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бенефициарный владелец</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="421aad59-ffe6-43ae-92cb-b90e6a6d1729">
+    <name>СведенияОВыгодприобретателях</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сведения о выгодприобретателях</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="98565419-79cc-4919-9ab0-33a1c3a2f0b6">
+    <name>ЦельУстановленияДеловыхОтношенийСФондом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цель установления деловых отношений с фондом</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="d76900a8-1a40-4ac2-b0aa-3782332cfdc1">
+    <name>ПредполагаемыйХарактер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предполагаемый характер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="ad8110ff-106d-4de1-a5ae-aa5c2b0e3798">
+    <name>ОсновныеЦелиФинХоз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основные цели фин хоз</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="82f3655a-e885-4f43-ad73-40e25ce097f6">
+    <name>СведенияОТекФинСостоянии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сведения о текущем финансовом состоянии</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="1cc8bd06-46be-4870-bbd8-bb65efb96a73">
+    <name>ДеловаяРепутация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Деловая репутация</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="46cf2f43-4e58-410a-9e24-82cd756bfd74">
+    <name>ОсновнойИсточникДохода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной источник дохода</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="31d254ec-1522-4e49-8322-e61027f8fbe3">
+    <name>ДолжностьРодственника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность родственника</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="1c665ebf-5d1c-4de3-8701-30838eb0db20">
+    <name>МестоРаботыРодственника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место работы родственника</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="ca56af6f-d598-4e82-9c8d-1f0bf72e9fd1">
+    <name>ИсточникДоходаРодственника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник дохода родственника</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="28fb7232-9636-451d-85fa-063aa043ecaa">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДокументАнкетыОпросника</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7ce90ead-aaed-4039-af71-5821edbe5be1">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

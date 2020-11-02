@@ -1,0 +1,141 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://пф.рф/ВсВО/НПФ/РСПННПФ/2018-09-12" elementFormQualified="true" attributeFormQualified="false">
+	<import namespace="http://пф.рф/УТ/2017-08-21"/>
+	<import namespace="http://пф.рф/АФ/2017-08-21"/>
+	<import namespace="http://пф.рф/ВсВО/НПФ/типы/2018-09-12"/>
+	<import namespace="http://пф.рф/ВсВО/НПФ/типыВходящие/2018-09-12"/>
+	<import namespace="http://пф.рф/НВП/2017-08-21"/>
+	<import namespace="http://www.w3.org/2000/09/xmldsig#"/>
+	<property name="ЭДПФР">
+		<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+			<property name="РСПННПФ">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://пф.рф/УТ/2017-08-21" name="Реквизиты" type="d6p1:ТипРеквизитыДокумента"/>
+					<property xmlns:d6p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="НПФ" type="d6p1:ТипСведенияНПФ"/>
+					<property name="СписокСведений">
+						<typeDef xsi:type="ObjectType">
+							<property name="Запись" upperBound="-1">
+								<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+									<property name="НомерПП" type="xs:positiveInteger"/>
+									<property name="ЗЛ">
+										<typeDef xsi:type="ObjectType">
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" ref="d12p1:ФИО"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" ref="d12p1:СНИЛС"/>
+										</typeDef>
+									</property>
+									<property name="РешениеОВыплате">
+										<typeDef xsi:type="ObjectType">
+											<property xmlns:d12p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="ВариантРешения" type="d12p1:ТипВариантРешения"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="Реквизиты" type="d12p1:ТипРеквизитыДокумента"/>
+										</typeDef>
+									</property>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="РеквизитыЗаявления" type="d10p1:ТипРеквизитыДокумента"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="РеквизитыУведомления" type="d10p1:ТипРеквизитыДокумента" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/НВП/2017-08-21" name="КодВыплаты" type="d10p1:ТипВидВыплаты" lowerBound="0"/>
+									<property name="НомерППВыплаты" type="xs:nonNegativeInteger" lowerBound="0"/>
+									<property name="ПричинаПрекращения" lowerBound="0">
+										<typeDef xsi:type="ValueType" base="xs:normalizedString" variety="Atomic">
+											<enumeration>СМРТ</enumeration>
+											<enumeration>СРОК</enumeration>
+										</typeDef>
+									</property>
+									<property name="ПричинаПриостановления" lowerBound="0">
+										<typeDef xsi:type="ValueType" base="xs:normalizedString" variety="Atomic">
+											<enumeration>ПРЗД</enumeration>
+											<enumeration>СМРК</enumeration>
+											<enumeration>ПРОЧ</enumeration>
+										</typeDef>
+									</property>
+									<property name="ДатаОкончанияВыплаты" type="xs:date" lowerBound="0"/>
+									<property name="СуммыДляВыплаты" lowerBound="0">
+										<typeDef xsi:type="ObjectType">
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="ОПС" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="ДСВ" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="СОФН" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="МСК" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="СПН" type="d12p1:ТипДеньги"/>
+										</typeDef>
+									</property>
+									<property name="ДатаРасчетаСуммы" type="xs:date" lowerBound="0"/>
+									<property name="ПерваяВыплата" lowerBound="0">
+										<typeDef xsi:type="ObjectType">
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="ОПС" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="ДСВ" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="СОФН" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="МСК" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="СПН" type="d12p1:ТипДеньги" lowerBound="0"/>
+										</typeDef>
+									</property>
+									<property name="ЕжемесячнаяВыплата" lowerBound="0">
+										<typeDef xsi:type="ObjectType">
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="ОПС" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="ДСВ" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="СОФН" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="МСК" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="СПН" type="d12p1:ТипДеньги"/>
+										</typeDef>
+									</property>
+									<property name="ДатаНачалаЕВ" type="xs:date" lowerBound="0"/>
+									<property name="ФактическаяВыплата" lowerBound="0">
+										<typeDef xsi:type="ObjectType">
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="ОПС" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="ДСВ" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="СОФН" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="МСК" type="d12p1:ТипДеньги" lowerBound="0"/>
+											<property xmlns:d12p1="http://пф.рф/УТ/2017-08-21" name="СПН" type="d12p1:ТипДеньги"/>
+										</typeDef>
+									</property>
+									<property name="ПериодВыплаты" type="xs:nonNegativeInteger" lowerBound="0"/>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+					<property name="Итого">
+						<typeDef xsi:type="ObjectType">
+							<property name="КоличествоЗЛ" type="xs:positiveInteger"/>
+							<property name="СуммыДляВыплаты">
+								<typeDef xsi:type="ObjectType">
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="ОПС" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="ДСВ" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="СОФН" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="МСК" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="СПН" type="d10p1:ТипДеньги"/>
+								</typeDef>
+							</property>
+							<property name="ПерваяВыплата">
+								<typeDef xsi:type="ObjectType">
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="ОПС" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="ДСВ" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="СОФН" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="МСК" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="СПН" type="d10p1:ТипДеньги"/>
+								</typeDef>
+							</property>
+							<property name="ЕжемесячнаяВыплата">
+								<typeDef xsi:type="ObjectType">
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="ОПС" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="ДСВ" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="СОФН" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="МСК" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="СПН" type="d10p1:ТипДеньги"/>
+								</typeDef>
+							</property>
+							<property name="ФактическаяВыплата">
+								<typeDef xsi:type="ObjectType">
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="ОПС" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="ДСВ" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="СОФН" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="МСК" type="d10p1:ТипДеньги" lowerBound="0"/>
+									<property xmlns:d10p1="http://пф.рф/УТ/2017-08-21" name="СПН" type="d10p1:ТипДеньги"/>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+					<property xmlns:d6p1="http://пф.рф/УТ/2017-08-21" name="Руководитель" type="d6p1:ТипДолжностноеЛицо"/>
+					<property xmlns:d6p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="Исполнитель" type="d6p1:ТипИсполнитель"/>
+				</typeDef>
+			</property>
+			<property xmlns:d4p1="http://пф.рф/ВсВО/НПФ/типы/2018-09-12" name="СлужебнаяИнформация" type="d4p1:ТипСлужебнаяИнформацияНПФ"/>
+			<property xmlns:d4p1="http://www.w3.org/2000/09/xmldsig#" ref="d4p1:Signature" lowerBound="0"/>
+		</typeDef>
+	</property>
+</package>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="806a7289-388d-435e-881c-3cca6cc9464f">
+  <producedTypes>
+    <objectType typeId="328fed69-f061-48d6-8cd9-46eea98ac368" valueTypeId="9f404ba0-091a-462b-8b68-80faf57d0505"/>
+    <refType typeId="df2bca61-78fa-4436-b36e-15b1f46ab470" valueTypeId="d6e579d9-133d-4592-b13f-e3e1a2879a27"/>
+    <selectionType typeId="b7d2a98c-b0d6-4bcc-8114-675c1a89541d" valueTypeId="6b17832a-f73c-4895-983a-7de3ebb54cec"/>
+    <listType typeId="6553f89c-23ca-41e4-9e02-295b2cffbe7f" valueTypeId="b47ebd7f-9450-4999-895c-99e501f297f2"/>
+    <managerType typeId="9eb60f0a-6f52-4621-b6b1-9dabd2ff6500" valueTypeId="d31a0491-5071-4898-bc44-70faa8f3bb1d"/>
+  </producedTypes>
+  <name>ХранилищеДанныхФорм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хранилище данных форм</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ХранилищеДанныхФорм.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ХранилищеДанныхФорм.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="1d4a40a9-8a01-47b4-95a8-e1e58a62b00c">
+    <name>КлючОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ объекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6828268c-fe24-4e47-b93c-331387ea5e86">
+    <name>ДанныеФормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные формы</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90a1f107-9ab2-4668-b44b-3ff75d7d94ac">
+  <producedTypes>
+    <selectionType typeId="788a9af1-fc60-4dff-b6b8-333352d77976" valueTypeId="98562b5b-9e33-4b1e-b42f-820d4c619005"/>
+    <listType typeId="0c33fd52-578b-4a87-9251-7ad3c2284fa0" valueTypeId="7c39c3ac-f78f-41e1-9b13-51efc614566d"/>
+    <managerType typeId="c13100d1-2773-495a-beaa-5209bf1da340" valueTypeId="e9770991-7f17-42b4-b004-b0250b3134f6"/>
+    <recordSetType typeId="d4969e95-eec6-4dba-b565-065a2201fcab" valueTypeId="132fb171-01d8-4a14-90a6-701dd37bafd3"/>
+    <recordKeyType typeId="611266bf-f348-4cdd-b44d-a2f27c19eb93" valueTypeId="db475797-a343-4b8b-8934-91b3b261951c"/>
+    <recordType typeId="17f44118-9acd-4f52-b02c-f1fca09a2eea" valueTypeId="19c6d4e9-07c4-4ac5-8ed0-b2ea7f95e1c3"/>
+    <recordManagerType typeId="8929ada4-e2bc-4096-b381-b0097fbf44de" valueTypeId="49e71208-5576-4041-9b40-ddcc9c45cee3"/>
+  </producedTypes>
+  <name>СоответствияОрганизацийПартнеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствия организаций партнеров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2ec14104-a973-4a39-887c-5a6ec6b7e1a4">
+    <name>ПартнерИнформирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партнер информирования</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9a7044ca-e46d-4a30-9acd-a6643140996d">
+    <name>ПартнерОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партнер обработки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c26d86eb-2b70-4e4f-9d7f-b92d21153ac1">
+    <name>Недействующий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Недействующий</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="89d245a3-7935-4fe7-9f7e-9b885b8ca633">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организация</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="511bf80f-ccfe-43a1-a1fa-cd081f83e769">
+    <name>Партнер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партнер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Партнер</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
